@@ -62,3 +62,17 @@ Imagine que a internet é um grande **sistema de entregas de comida**:
 - É uma tecnologia que cria um **túnel criptografado** entre o meu dispositivo e um servidor seguro da VPN antes de acessar a internet.
 - **Privacidade no Wi-Fi:** Impede que pessoas na mesma rede (como Wi-Fi público) ou a operadora de internet espionem os dados que estou enviando.
 - **Mascaramento de IP:** O site final enxerga o IP do servidor da VPN em vez do meu IP residencial real.
+
+---
+
+### Parte 3 (Ainda no dia 23/11/2026) — Criptografia
+
+#### 8. O que é Criptografia?
+- É o processo de embaralhar informações legíveis (**Texto Claro**) em códigos incompreensíveis (**Texto Cifrado**) para que apenas pessoas autorizadas consigam ler, usando uma **Chave** matemática.
+
+#### 9. Criptografia Simétrica vs. Assimétrica
+- **Criptografia Simétrica (Chave Única):** Usa a **mesma chave** para trancar e destrancar a mensagem. É muito rápida, mas tem o risco de alguém interceptar a chave na hora de enviá-la para a outra pessoa.
+- **Criptografia Assimétrica (Par de Chaves):** Usa duas chaves diferentes:
+  - **Chave Pública:** Pode ser compartilhada com qualquer pessoa; serve apenas para **trancar** (criptografar) os dados.
+  - **Chave Privada:** Fica em segredo absoluto com o dono; é a única capaz de **destrancar** (descriptografar) o que foi fechado com a Chave Pública.
+- *Uso real:* O protocolo **HTTPS** usa criptografia assimétrica no início da conexão para trocar chaves com segurança, e depois usa criptografia simétrica para transmitir os dados do site rapidamente.
