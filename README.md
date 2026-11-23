@@ -44,3 +44,21 @@ Imagine que a internet é um grande **sistema de entregas de comida**:
 ### 5. Outros Conceitos Importantes
 - **Latência (Ping / ms):** É o tempo de atraso que um pacote de dados leva para sair do meu computador, chegar até um servidor e voltar. É medida em milissegundos (`ms`). Quanto menor o número, mais rápida e responsiva é a conexão (essencial tanto para jogos quanto para testes de rede).
 - **Firewall (Parede de Fogo):** É um sistema de segurança (pode ser um programa no PC ou um equipamento físico na rede) que funciona como um "segurança de balada". Ele analisa todo o tráfego de dados que tenta entrar ou sair e decide o que passa e o que é bloqueado com base em regras de segurança (como vimos no Salto 2 do comando `tracert`, onde o roteador bloqueou a resposta).
+
+---
+
+### Parte 2 (Ainda no dia 23/11/2026) — Portas de Rede e VPN
+
+#### 6. Portas de Rede (Os Apartamentos do Prédio)
+- Se o **Endereço IP** é o endereço do prédio (o servidor), a **Porta de Rede** é o número do apartamento (o programa ou serviço específico dentro daquele servidor).
+- Um computador possui **65.535 portas** numeradas para organizar as conexões.
+- **Portas mais importantes que aprendi:**
+  - **Porta 80:** Usada para tráfego web comum (**HTTP**).
+  - **Porta 443:** Usada para tráfego web seguro e criptografado (**HTTPS**).
+  - **Porta 22:** Usada para acesso remoto seguro via terminal (**SSH**).
+- *Importância na segurança:* Analistas e hackers escaneiam portas abertas para descobrir quais serviços estão rodando em um servidor e se algum está vulnerável.
+
+#### 7. VPN — Virtual Private Network (O Túnel Secreto)
+- É uma tecnologia que cria um **túnel criptografado** entre o meu dispositivo e um servidor seguro da VPN antes de acessar a internet.
+- **Privacidade no Wi-Fi:** Impede que pessoas na mesma rede (como Wi-Fi público) ou a operadora de internet espionem os dados que estou enviando.
+- **Mascaramento de IP:** O site final enxerga o IP do servidor da VPN em vez do meu IP residencial real.
