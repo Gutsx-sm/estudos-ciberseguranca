@@ -76,3 +76,7 @@ Imagine que a internet é um grande **sistema de entregas de comida**:
   - **Chave Pública:** Pode ser compartilhada com qualquer pessoa; serve apenas para **trancar** (criptografar) os dados.
   - **Chave Privada:** Fica em segredo absoluto com o dono; é a única capaz de **destrancar** (descriptografar) o que foi fechado com a Chave Pública.
 - *Uso real:* O protocolo **HTTPS** usa criptografia assimétrica no início da conexão para trocar chaves com segurança, e depois usa criptografia simétrica para transmitir os dados do site rapidamente.
+
+ #### 🧪 Laboratório Prático (Terminal Windows)
+- **`ping` e `tracert`:** Testei a latência e rastreei a rota dos meus pacotes até o servidor do Google (`IPv6`), observando os saltos pelos roteadores e o bloqueio de Firewall no caminho.
+- **`netstat -ano` + `tasklist`:** Identifiquei conexões ativas (`ESTABLISHED`) no meu PC e cruzei o **PID** (identificador do processo) para descobrir o programa responsável (`smartscreen.exe`, o filtro de segurança do Windows conectado via HTTPS).
